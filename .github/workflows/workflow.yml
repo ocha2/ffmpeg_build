@@ -7,5 +7,7 @@ jobs:
     steps:
       - name: ffmpeg-windows-build-helpers
         run : git clone https://github.com/rdp/ffmpeg-windows-build-helpers.git
-      - name: check
-        run : ls -la
+      - name: run
+        run : |
+             cd ~/ffmpeg-windows-build-helpers
+             ./cross_compile_ffmpeg.sh
