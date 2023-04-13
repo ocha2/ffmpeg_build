@@ -9,5 +9,5 @@ jobs:
         run : git clone https://github.com/rdp/ffmpeg-windows-build-helpers.git
       - name: run
         run : |
-             cd ~/ffmpeg-windows-build-helpers
+             cd ffmpeg-windows-build-helpers
              ./cross_compile_ffmpeg.sh
