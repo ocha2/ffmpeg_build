@@ -1,0 +1,11 @@
+on: push
+
+jobs:
+  command:
+    name: FFmpeg build
+    runs-on: ubuntu-latest
+    steps:
+      - name: ffmpeg-windows-build-helpers
+        run : git clone https://github.com/rdp/ffmpeg-windows-build-helpers.git
+      - name: check
+        run : ls -la
