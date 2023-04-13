@@ -9,8 +9,8 @@ jobs :
         run : git clone https://github.com/rdp/ffmpeg-windows-build-helpers.git
       - name : preparation
         run : |
-            apt-get update
-            apt-get install subversion ragel curl texinfo g++ ed bison flex cvs yasm automake libtool autoconf gcc cmake git make pkg-config zlib1g-dev unzip pax nasm gperf autogen bzip2 autoconf-archive p7zip-full meson clang python3-distutils python-is-python3 -y
+            sudo apt-get update
+            sudo apt-get install subversion ragel curl texinfo g++ ed bison flex cvs yasm automake libtool autoconf gcc cmake git make pkg-config zlib1g-dev unzip pax nasm gperf autogen bzip2 autoconf-archive p7zip-full meson clang python3-distutils python-is-python3 -y
       - name : build
         run : |
              cd ffmpeg-windows-build-helpers
